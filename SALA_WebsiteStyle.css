@@ -147,7 +147,11 @@ main {
 
 .resource-list {
     list-style: disc;
-    padding-left: 20px;
+    border: 2px solid #01579b; 
+    padding: 30px; 
+    background-color: #e0f7fa;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .news-item {

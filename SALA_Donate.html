@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News and Updates - Frozen Future</title>
+  <title>Donate - Frozen Future</title>
   <link rel="icon" 
     type="image/png"
     href="https://images.emojiterra.com/google/android-11/512px/1f43b-2744.png">
@@ -28,33 +28,42 @@
         <li><a href="SALA_News.html">News and Updates</a></li>
       </ul>
       <div class="donate">
-        <a href="SALA_Donate.html">Donate</a>
+        <a href="#donate-section">Donate</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="content">
-      <h1>News and Updates</h1>
+    <section class="intro">
+      <h1>Support Our Mission</h1>
       <p>
-        Stay current with the latest advancements in climate science, policy news, and
-        event schedules that aim to combat the rapid melting of the polar ice caps.
+        Your donation helps fund research, education, and conservation efforts to protect our polar regions and combat climate change.
       </p>
+    </section>
 
-      <article class="news-item">
-        <h2>Global Climate Summit Tackles Ice Cap Crisis</h2>
-        <p>World leaders discuss innovative strategies to protect our polar regions.
-        </p>
-        <a href="https://www.arcticwwf.org/newsroom/news/one-planet-polar-summit-a-global-initiative-for-polar-regions/" style="color: darkblue;" target="_blank">Click Here To Read More</a>
-      </article>
-      <article class="news-item">
-        <h2>New Research Reveals Accelerated Ice Cap Melting Rates</h2>
-        <p>
-          Scientists release startling data indicating that polar ice caps are
-          melting faster than earlier projections.
-        </p>
-        <a href="https://www.fau.eu/2025/02/pressemeldungen/climate-change-glaciers-melting-at-an-alarming-rate/#:~:text=New%20ESA%20study%20involving%20FAU%20shows%20dramatic%20trend&text=The%20study%20shows%20that%20since,in%20the%20last%20ten%20years." style="color: darkblue;" target="_blank">Click Here To Read More</a>
-      </article>
+    <section id="donate-section" class="donation-form">
+      <h2>Make a Donation</h2>
+      <form onsubmit="showThankYou(); return false;">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+      
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+      
+        <label for="amount">Donation Amount ($):</label><br />
+        <input type="number" id="amount" name="amount" min="1" required /><br /><br />
+      
+        <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+          Donate Now
+        </button>
+      </form>
+      
+      <script>
+        function showThankYou() {
+          alert("Thank you for your generous donation!");
+        }
+      </script>
+      
     </section>
   </main>
 
